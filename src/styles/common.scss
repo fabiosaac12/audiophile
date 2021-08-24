@@ -1,4 +1,19 @@
+@import 'src/styles/colors.scss';
+
 .container {
   padding-left: 180px;
   padding-right: 180px;
+}
+
+.invisible {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.button {
+  background-color: $secondary;
+  border-radius: 3px;
+  padding: 15px 25px;
+  text-transform: uppercase;
+  color: white;
 }

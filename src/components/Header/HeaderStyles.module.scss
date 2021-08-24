@@ -1,0 +1,41 @@
+@import 'src/styles/colors.scss';
+
+.container {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  background-color: $primary;
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  cursor: pointer;
+  transition: opacity 200ms;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.logo {
+  width: 120px;
+  margin-right: auto;
+}
+
+.navigation {
+  span {
+    font-size: 14px;
+    color: white;
+    text-transform: uppercase;
+    margin: 0 16px 0 16px;
+  }
+}
+
+.shoppingButton {
+  margin-left: auto;
+}
+
+.shoppingCarIcon {
+  margin-left: auto;
+  color: white;
+  font-size: 21px;
+}
