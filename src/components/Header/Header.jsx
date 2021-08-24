@@ -1,5 +1,5 @@
 import { images } from '../../assets';
-import classes from './HeaderStyles.module.scss';
+import classes from './Header.module.scss';
 import { AiOutlineShoppingCart } from 'react-icons/ai';
 
 export const Header = () => (
