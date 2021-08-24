@@ -6,12 +6,12 @@ export const Header = () => (
   <div className={`container ${classes.container}`}>
     <img src={images.logo} className={classes.logo} alt="logo" />
     <div className={classes.navigation}>
-      <span className={classes.button}>Home</span>
-      <span className={classes.button}>Headphones</span>
-      <span className={classes.button}>Speakers</span>
-      <span className={classes.button}>Earphones</span>
+      <span className={'textButton'}>Home</span>
+      <span className={'textButton'}>Headphones</span>
+      <span className={'textButton'}>Speakers</span>
+      <span className={'textButton'}>Earphones</span>
     </div>
-    <div className={`${classes.shoppingButton} ${classes.button}`}>
+    <div className={`${classes.shoppingButton} textButton`}>
       <AiOutlineShoppingCart className={classes.shoppingCarIcon} />
     </div>
   </div>

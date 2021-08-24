@@ -4,13 +4,17 @@ import { Resume } from './Resume';
 import { AddToCart } from './Resume/AddToCart/AddToCart';
 import { Features } from './Features';
 import { InTheBox } from './InTheBox/InTheBox';
+import { Images } from './Images';
+import { useSelectedProduct } from '../../context/SelectedProduct';
 
 export const ProductPresentation = () => {
+  const { selectedProduct } = useSelectedProduct();
+
   return (
     <>
       <div className={classes.overviewContainer}>
         <div className={classes.imageContainer}>
-          <img src={images.headphones1} alt="product" />
+          <img src={selectedProduct.mainImage} alt="product" />
         </div>
 
         <div className={classes.resumeContainer}>
@@ -26,6 +30,7 @@ export const ProductPresentation = () => {
           <InTheBox />
         </div>
       </div>
+      <Images />
     </>
   );
 };

@@ -8,14 +8,6 @@
   justify-content: center;
 }
 
-.button {
-  cursor: pointer;
-  transition: opacity 200ms;
-  &:hover {
-    opacity: 0.8;
-  }
-}
-
 .logo {
   width: 120px;
   margin-right: auto;

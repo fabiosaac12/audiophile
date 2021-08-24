@@ -11,7 +11,7 @@ export const Resume = () => {
       )}
       <div className="h1">{selectedProduct.name}</div>
       <div className="p">{selectedProduct.description}</div>
-      <div className={classes.priceText}>{selectedProduct.price}</div>
+      <div className={classes.priceText}>$ {selectedProduct.price}</div>
     </>
   );
 };

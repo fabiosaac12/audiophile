@@ -23,7 +23,12 @@ export const AddToCart = () => {
           -
         </span>
         <span className={classes.quantity}>{quantity}</span>
-        <span className={classes.sign} onClick={addOne}>
+        <span
+          className={`${classes.sign} ${
+            quantity === selectedProduct.available ? 'invisible' : ''
+          }`}
+          onClick={addOne}
+        >
           +
         </span>
       </div>

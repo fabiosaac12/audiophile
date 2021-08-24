@@ -24,3 +24,11 @@
     color: $secondary;
   }
 }
+
+.textButton {
+  cursor: pointer;
+  transition: opacity 200ms;
+  &:hover {
+    opacity: 0.8;
+  }
+}

@@ -1,3 +1,4 @@
+import { Footer } from './components/Footer';
 import { Header } from './components/Header/Header';
 import { ProductPresentation } from './components/ProductPresentation/ProductPresentation';
 import { SelectedProductProvider } from './context/SelectedProduct/SelectedProductProvider';
@@ -10,5 +11,6 @@ export const App = () => (
     <div className="container">
       <ProductPresentation />
     </div>
+    <Footer />
   </SelectedProductProvider>
 );

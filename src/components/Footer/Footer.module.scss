@@ -1,0 +1,55 @@
+@import 'src/styles/colors.scss';
+
+.container {
+  margin-top: 120px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  background-color: $primary;
+}
+
+.flexContainer {
+  display: flex;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.text {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 15px;
+}
+
+.logo {
+  width: 120px;
+  margin-right: auto;
+}
+
+.navigation {
+  span {
+    font-size: 14px;
+    color: white;
+    text-transform: uppercase;
+    margin-left: 32px;
+  }
+}
+
+.description {
+  width: 50%;
+}
+
+.networksContainer {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: auto;
+
+  svg {
+    color: white;
+    font-size: 24px;
+    margin-left: 9px;
+  }
+}
+
+.copyright {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
