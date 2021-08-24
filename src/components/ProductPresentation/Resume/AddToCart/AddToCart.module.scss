@@ -1,0 +1,27 @@
+.container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.quantityInput {
+  padding: 15px;
+  background-color: rgba(0, 233, 245, 0.104);
+  width: 90px;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 3px;
+  margin-right: 25px;
+  user-select: none;
+  .sign {
+    color: rgba(0, 0, 0, 0.288);
+    cursor: pointer;
+    transition: opacity 300ms;
+  }
+  .quantity {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: black;
+    font-weight: bolder;
+  }
+}

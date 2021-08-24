@@ -16,4 +16,11 @@
   padding: 15px 25px;
   text-transform: uppercase;
   color: white;
+  transition: all 300ms;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $primary;
+    color: $secondary;
+  }
 }

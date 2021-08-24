@@ -1,0 +1,8 @@
+@import 'src/styles/colors.scss';
+.item {
+  margin-bottom: 12px;
+  span {
+    font-weight: bold;
+    color: $secondary;
+  }
+}

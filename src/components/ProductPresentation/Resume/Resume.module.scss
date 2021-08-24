@@ -1,0 +1,17 @@
+@import 'src/styles/colors.scss';
+
+.newText {
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-size: 17px;
+  color: $secondary;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.priceText {
+  color: black;
+  letter-spacing: 2px;
+  font-weight: bold;
+  margin-top: 30px;
+}
