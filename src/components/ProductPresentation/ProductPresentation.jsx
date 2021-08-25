@@ -1,5 +1,4 @@
 import classes from './ProductPresentation.module.scss';
-import { images } from '../../assets';
 import { Resume } from './Resume';
 import { AddToCart } from './Resume/AddToCart/AddToCart';
 import { Features } from './Features';
