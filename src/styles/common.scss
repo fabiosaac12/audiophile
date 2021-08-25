@@ -1,8 +1,24 @@
 @import 'src/styles/colors.scss';
+@import 'src/styles/breakpoints.scss';
 
 .container {
   padding-left: 180px;
   padding-right: 180px;
+
+  @media screen and (max-width: $md) {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  @media screen and (max-width: $sm) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media screen and (max-width: $xs) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .invisible {
@@ -18,6 +34,10 @@
   color: white;
   transition: all 300ms;
   cursor: pointer;
+
+  @media screen and (max-width: $xs) {
+    padding: 15px 18px;
+  }
 
   &:hover {
     background-color: $primary;

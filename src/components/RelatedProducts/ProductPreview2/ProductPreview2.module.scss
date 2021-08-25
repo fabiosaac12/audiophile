@@ -1,4 +1,5 @@
 @import 'src/styles/colors.scss';
+@import 'src/styles/breakpoints.scss';
 
 .container {
   margin-top: 160px;
@@ -12,6 +13,14 @@
   border-radius: 3px;
   height: 180px;
   position: relative;
+
+  @media screen and (max-width: $md) {
+    margin-top: 135px;
+  }
+
+  @media screen and (max-width: $xs) {
+    max-width: 300px;
+  }
 }
 
 .image {

@@ -1,0 +1,19 @@
+@import './breakpoints.scss';
+
+.xsDownInvisible {
+  @media screen and (max-width: $xs) {
+    display: none;
+  }
+}
+
+.smDownInvisible {
+  @media screen and (max-width: $sm) {
+    display: none;
+  }
+}
+
+.mdUpInvisible {
+  @media screen and (min-width: $sm) {
+    display: none;
+  }
+}

@@ -10,7 +10,7 @@ export const Footer = () => (
   <div className={`container ${classes.container}`}>
     <div className={classes.flexContainer}>
       <img src={images.logo} className={classes.logo} alt="logo" />
-      <div className={classes.navigation}>
+      <div className={`${classes.navigation} smDownInvisible`}>
         <span className={'textButton'}>Home</span>
         <span className={'textButton'}>Headphones</span>
         <span className={'textButton'}>Speakers</span>

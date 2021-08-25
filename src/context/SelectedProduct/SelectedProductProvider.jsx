@@ -62,11 +62,11 @@ const _relatedProducts = [
   },
   {
     name: 'Speakers',
-    image: images.related6,
+    image: images.related5,
   },
   {
-    name: 'Hearphones',
-    image: images.related5,
+    name: 'Earphones',
+    image: images.related6,
   },
 ];
 

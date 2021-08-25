@@ -1,16 +1,25 @@
 @import 'src/styles/colors.scss';
+@import 'src/styles/breakpoints.scss';
 
 .container {
   margin-top: 120px;
   padding-top: 35px;
   padding-bottom: 35px;
   background-color: $primary;
+
+  @media screen and (max-width: $xs) {
+    margin-top: 70px;
+  }
 }
 
 .flexContainer {
   display: flex;
   padding-bottom: 20px;
   padding-top: 20px;
+
+  @media screen and (max-width: $xs) {
+    flex-direction: column;
+  }
 }
 
 .text {
@@ -34,6 +43,14 @@
 
 .description {
   width: 50%;
+
+  @media screen and (max-width: $sm) {
+    width: 70%;
+  }
+
+  @media screen and (max-width: $xs) {
+    width: 100%;
+  }
 }
 
 .networksContainer {
@@ -42,10 +59,24 @@
   justify-content: flex-end;
   margin-top: auto;
 
+  @media screen and (max-width: $sm) {
+    width: 30%;
+  }
+
+  @media screen and (max-width: $xs) {
+    justify-content: flex-start;
+    margin-top: 30px;
+  }
+
   svg {
     color: white;
     font-size: 24px;
     margin-left: 9px;
+
+    @media screen and (max-width: $xs) {
+      margin-left: 0;
+      margin-right: 9px;
+    }
   }
 }
 

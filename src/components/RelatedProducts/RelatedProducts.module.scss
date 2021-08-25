@@ -1,8 +1,14 @@
+@import 'src/styles/breakpoints';
+
 .container {
   margin-top: 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media screen and (max-width: $sm) {
+    margin-top: 70px;
+  }
 }
 
 .gridContainer {
@@ -14,4 +20,50 @@
     'first second third'
     'fourth fifth sixth';
   grid-gap: 25px;
+
+  @media screen and (max-width: $sm) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      'first first second second'
+      '. third third .'
+      'fourth fourth fifth fifth'
+      '. sixth sixth .';
+  }
+
+  @media screen and (max-width: $xs) {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      'first'
+      'second'
+      'third'
+      'fourth'
+      'fifth'
+      'sixth';
+  }
+
+  .first {
+    grid-area: first;
+  }
+
+  .second {
+    grid-area: second;
+  }
+
+  .third {
+    grid-area: third;
+  }
+
+  .fourth {
+    grid-area: fourth;
+  }
+
+  .fifth {
+    grid-area: fifth;
+  }
+
+  .sixth {
+    grid-area: sixth;
+  }
 }

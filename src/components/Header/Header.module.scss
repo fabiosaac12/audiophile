@@ -1,11 +1,22 @@
 @import 'src/styles/colors.scss';
+@import 'src/styles/breakpoints.scss';
 
 .container {
-  padding-top: 35px;
-  padding-bottom: 35px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   background-color: $primary;
   display: flex;
   justify-content: center;
+
+  @media screen and (max-width: $sm) {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 500;
+  }
 }
 
 .logo {
@@ -22,11 +33,13 @@
   }
 }
 
-.shoppingButton {
+.button {
   margin-left: auto;
+  display: flex;
+  align-items: center;
 }
 
-.shoppingCarIcon {
+.buttonIcon {
   margin-left: auto;
   color: white;
   font-size: 21px;
