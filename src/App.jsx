@@ -1,8 +1,9 @@
 import { Footer } from './components/Footer';
-import { Header } from './components/Header/Header';
-import { ProductPresentation } from './components/ProductPresentation/ProductPresentation';
-import { RelatedProducts } from './components/RelatedProducts/RelatedProducts';
-import { SelectedProductProvider } from './context/SelectedProduct/SelectedProductProvider';
+import { Header } from './components/Header';
+import { ProductPresentation } from './components/ProductPresentation';
+import { RelatedProducts } from './components/RelatedProducts';
+import { StoreResume } from './components/StoreResume';
+import { SelectedProductProvider } from './context/SelectedProduct';
 import './styles/common.scss';
 import './styles/text.scss';
 
@@ -12,6 +13,7 @@ export const App = () => (
     <div className="container">
       <ProductPresentation />
       <RelatedProducts />
+      <StoreResume />
     </div>
     <Footer />
   </SelectedProductProvider>
