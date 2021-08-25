@@ -8,6 +8,7 @@ import {
 
 export const Footer = () => (
   <div className={`container ${classes.container}`}>
+    <div className={classes.line} />
     <div className={classes.flexContainer}>
       <img src={images.logo} className={classes.logo} alt="logo" />
       <div className={`${classes.navigation} smDownInvisible`}>

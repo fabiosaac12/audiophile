@@ -6,9 +6,19 @@
   padding-top: 35px;
   padding-bottom: 35px;
   background-color: $primary;
+  position: relative;
 
   @media screen and (max-width: $xs) {
     margin-top: 70px;
+  }
+
+  .line {
+    position: absolute;
+    top: 0;
+    height: 4px;
+    background-color: $secondary;
+    width: 100px;
+    border-radius: 1px;
   }
 }
 
