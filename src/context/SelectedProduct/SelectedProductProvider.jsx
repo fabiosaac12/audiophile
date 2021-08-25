@@ -46,27 +46,27 @@ const _selectedProduct = {
 const _relatedProducts = [
   {
     name: 'XX99 Mark I',
-    image: null,
+    image: images.related1,
   },
   {
     name: 'XX59',
-    image: null,
+    image: images.related3,
   },
   {
     name: 'ZX9 Speaker',
-    image: null,
+    image: images.related2,
   },
   {
     name: 'Headphones',
-    image: null,
+    image: images.related4,
   },
   {
     name: 'Speakers',
-    image: null,
+    image: images.related6,
   },
   {
     name: 'Hearphones',
-    image: null,
+    image: images.related5,
   },
 ];
 

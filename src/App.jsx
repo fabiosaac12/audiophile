@@ -1,6 +1,7 @@
 import { Footer } from './components/Footer';
 import { Header } from './components/Header/Header';
 import { ProductPresentation } from './components/ProductPresentation/ProductPresentation';
+import { RelatedProducts } from './components/RelatedProducts/RelatedProducts';
 import { SelectedProductProvider } from './context/SelectedProduct/SelectedProductProvider';
 import './styles/common.scss';
 import './styles/text.scss';
@@ -10,6 +11,7 @@ export const App = () => (
     <Header />
     <div className="container">
       <ProductPresentation />
+      <RelatedProducts />
     </div>
     <Footer />
   </SelectedProductProvider>

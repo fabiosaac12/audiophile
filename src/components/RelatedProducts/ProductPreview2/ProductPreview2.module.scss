@@ -1,0 +1,28 @@
+@import 'src/styles/colors.scss';
+
+.container {
+  margin-top: 160px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: rgba(0, 233, 245, 0.104);
+  width: 100%;
+  border-radius: 3px;
+  height: 180px;
+  position: relative;
+}
+
+.image {
+  position: absolute;
+  top: -45%;
+  max-height: 90%;
+  margin-bottom: 20px;
+}
+
+.icon {
+  font-size: 22px;
+  transform: translateY(6px);
+  color: $secondary;
+}
